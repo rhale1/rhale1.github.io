@@ -154,7 +154,7 @@ body::after{
 
 .project-container {
 	background: rgb(144, 149, 156);
-	border: solid 3px #2C2F3E;
+	border: 3px solid #6c757d;
 	color: #1f232f;
 	font-size: 1.1em;
 }
@@ -171,7 +171,7 @@ body::after{
 
 .project-btn {
 	background: transparent;
-	border: 1px solid #2C2F3E;
+	border: 1px solid #1f232f;
 	font-size: .8em;
 }
 
@@ -192,8 +192,7 @@ body::after{
 /* Lines on the side of project titles */
 .project-text_header {
 	overflow: hidden;
-	font-size: 1.5em;
-	letter-spacing: .1em;
+	font-size: 1.4em;
 }
 
 .project-text_header:before,
@@ -218,6 +217,7 @@ body::after{
 }
 /******************************* CONTACT SECTION *******************************/
 #contact {
+	border-top: 3px solid #6c757d;
 	background: #1f232f;
 	color: #afb6d8c4;	
 }
@@ -233,9 +233,9 @@ body::after{
 }
 
 .footer-container {
+	border-top: 1px solid #6c757d;
 	background: black;
 	overflow: hidden;
-	color: #7F7B91;
 }
 /****************** ANIMATION **********************/
 /* Down arrow */
