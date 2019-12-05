@@ -18,49 +18,26 @@ body::after{
 	left:0;
 	right:0;
 	z-index:-1;
-	background: url(../images/test.jpg) center center;
+	background: url(../images/main-bg.jpg) center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-.header-text {
-	font-weight: 350;
-	letter-spacing: .1em; 
-	position: relative;
-	display: inline-block; 
-	padding-bottom: 5px;
-	color: black;
-}
-	
-/* Line under header text */
-.header-text:before{
-	content: "";
-	position: absolute;
-	width: 50%;
-	height: 1px;
-	bottom: 0;
-	left: 25%;
-	border-bottom: 2px solid #17a2b8;
-}
 /******************************* NAV BAR *******************************/
 .nav-link  {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: .3em;
 } 
 /******************************* HOME SECTION *******************************/
-#home {
-	height: 100%;
-	min-height: 600px;	
-}
-
 .home-text {
 	color: #dcdcdc;
 	font-weight: 350;
 	letter-spacing: .2em; 
 	font-size: 4em;
-	text-shadow: 3px 5px 2px #212529;
+	text-shadow: 3px 5px 2px #0a0219b3;
+	
 }
 
 .home-text_sub {
@@ -68,7 +45,7 @@ body::after{
 	font-weight: 350;
 	letter-spacing: .1em; 
 	font-size: 3em;
-	text-shadow: 3px 5px 2px #212529;
+	text-shadow: 3px 5px 2px #0a0219b3;
 }
 
 .down-arrows {  
@@ -100,18 +77,27 @@ body::after{
 
 /******************************* ABOUT SECTION *******************************/
 #about {
-	background: url(../images/about-bg.jpg)  fixed;
-	z-index: 3;
-	height:auto;
+	padding: 80px 0px;
+}
+
+.about-wrapper {
+	background: #1f232f;
+	color: #afb6d8c4;	
+	border: 3px solid #6c757d;
+	
+}
+
+#about h1 {
+	text-shadow: 3px 5px 2px #0e1824;
+	letter-spacing: .1em;
+	padding: .5em;
 }
 
 .about-text {
-	padding: 2% 5% 3%;
-	color: rgba(0, 0, 0, 0.84); 
+	padding: 0% 3% 3%;
 	letter-spacing: 2px;
 	font-size: 1.5em;
 }  
-
 /******************************* SKILLS SECTION *******************************/
 .skills-icon_container {
 	border-radius: 50%;
@@ -142,9 +128,17 @@ body::after{
     text-shadow: 3px 5px 2px #0e1824;
 	letter-spacing: .15em; 
 	font-size: 3em;
+	display: inline-block; 
 }
-
-.header-text_portfolio:before {
+	
+/* Line under header text */
+.header-text_portfolio:before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	bottom: 0;
+	left: 25%;
 	border-bottom: 2px solid #b3e2ff;
 }
 
