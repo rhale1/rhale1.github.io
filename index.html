@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="Rachel Hale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rachel Hale | Developer</title>   
+</head>
+<body>
+<!------------------------------ NAV BAR  ---------------------------------->
+ <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">   
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" aria-label="Go to home" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-label="Go to about" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" aria-label="Go to portfolio" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" aria-label="Go to contact" href="#contact" id="nav-contact">Contact</a></li>
+        </ul> 
+    </div>
+</nav>  
+<!------------------------------ HOME SECTION ---------------------------------->
+<header id="home"> 
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="home-text" data-aos="zoom-in-up" data-aos-duration="1000">Rachel Hale</h1>
+                <h1 class="home-text_sub" data-aos="fade-up" data-aos-duration="1500">Web Developer</h1> 
+                <a aria-label="arrow down" href="#about"><svg class="down-arrows">
+                    <path class="arrowOne" d="M0 0 L30 32 L60 0"></path>
+                    <path class="arrowTwo" d="M0 20 L30 52 L60 20"></path></svg> 
+                </a>
+            </div>     
+        </div>
+    </div>
+</header> 
+<!------------------------------ ABOUT ME AND SKILLS SECTION -------------------->
+<div class="container-fluid" id="about">
+    <div class="row pt-5">
+        <div class="col pt-2">
+            <h1 class="header-text" data-aos="fade-up" data-aos-once="true">About Me</h1>
+        </div>
+    </div>
+    <!----------------------ABOUT ME ---------------------->
+    <div class="row pb-4" data-aos="fade-up">    
+        <p class="about-text">Hi I'm <span style="font-weight: bold">Rachel,</span> I am currently studying web development. 
+        I live in Seattle, WA and enjoy traveling, hiking, skiing and of course coding! I love problem solving and learning new technologies. 
+        Below are some languages I am familiar with and I am continuing to learn.</p> 
+    </div>  
+     <!---------------------- SKILLS  ---------------------->
+    <div class="container">
+        <div class="row pb-5" data-aos="fade-up">    
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon1.png" alt="html/css">
+                <div class="skills-text">
+                    <h3>HTML & CSS </h3>
+                    <h4>Bootstrap</h4>
+                    <h4>SCSS</h4>
+                </div>
+            </div> 
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon2.png" alt="js">
+                <div class="skills-text">
+                    <h3>JavaScript</h3>
+                    <h4>jQuery</h4>
+                    <h4>Ajax</h4>
+                    <h4>NodeJS</h4>
+                </div>
+            </div> 
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon3.png" alt="C#">
+                <div class="skills-text">
+                    <h3>C# & .NET </h3>
+                    <h4>Entity Framework</h4>
+                    <h4>MVC</h4>
+                </div>
+            </div> 
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon4.png" alt="python">
+                <div class="skills-text">
+                    <h3>Python</h3>
+                    <h4>Django</h4>
+                </div>
+            </div> 
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon5.png" alt="sql">
+                <div class="skills-text">
+                    <h3>SQL & Rdms</h3>
+                    <h4>T-SQL</h4>
+                    <h4>SQL Server</h4>
+                </div>
+            </div> 
+            <div class="col-md-2 col-4 px-lg-4">
+                <img class="skills-icon_container" src="./images/thumb/icon6.png" alt="version control">
+                <div class="skills-text">
+                    <h3>Version Control</h3>
+                    <h4>Github</h4>
+                    <h4>Azure DevOps</h4>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!------------------------------ PORTFOLIO SECTION ------------------------------>
+<div class="container-fluid" id="portfolio">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col py-3">
+                <h1 class="header-text header-text_portfolio" data-aos="fade-up" data-aos-once="true">Portfolio</h1>
+            </div>
+        </div>
+        <!-- Project One -->
+        <div class="row justify-content-center align-items-center project-wrapper"> 
+            <div class="col-12 col-md-6 mb-3">
+                <div class="project-container">
+                    <a href="./projects/WeatherApp/index.html" target="_blank" rel="noopener">
+                        <img class="project-image_container" src="./images/projects/project1.png" alt="clouds with button">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mb-5">
+                <div class="project-container project-text_container">
+                    <h2 class="project-text_header">Weather</h2>
+                    <p>Designed a vanilla JavaScript weather application which displays the weather based on users geolocation. Utilizes OpenWeather API, CSS3 & HTML5.</p>
+                    <a href="https://github.com/rhale1/Weather-App-JavaScript" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon7.png" alt="go to button">View Code</button></a>
+                    <a href="./projects/WeatherApp/index.html" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon8.png" alt="go to button">Preview</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Two -->
+        <div class="row justify-content-center align-items-center project-wrapper">
+            <div class="col-12 col-md-6 mb-3 order-md-last">
+                <div class="project-container">
+                    <a href="https://github.com/rhale1/ScheduleIt2.0" target="_blank" rel="noopener">
+                        <img class="project-image_container" src="./images/projects/project2.png" alt="login page">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mb-5 order-md-first">
+                <div class="project-container project-text_container">
+                    <h2 class="project-text_header">Login Page</h2>
+                    <p>An ASP.NET MVC C# user management system with a code first database. The system tracks user clock-ins, schedules, requests for time off and more.</p>
+                    <a href="https://github.com/rhale1/ScheduleIt2.0" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon7.png" alt="go to button">View Code</button></a>
+                    <button class="disabled"><img src="./images/thumb/icon8.png" alt="go to button">Preview</button>
+                </div>
+            </div>
+        </div>
+        <!-- Project Three -->
+        <div class="row justify-content-center align-items-center project-wrapper">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="project-container">
+                    <a href="./projects/SpaceStation/space_station.html" target="_blank" rel="noopener">
+                        <img class="project-image_container" src="./images/projects/project3.png" alt="space">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mb-5">
+                <div class="project-container project-text_container">
+                    <h2 class="project-text_header">Space Station</h2>
+                    <p>Original design by Daniel Christie. This project was a follow along tutorial which included CSS, HTML, animations and keyframes.</p>
+                    <a href="https://github.com/rhale1/The-Tech-Academy-HTML-CSS-Projects/tree/master/space_station" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon7.png" alt="go to button">View Code</button></a>
+                    <a href="./projects/SpaceStation/space_station.html" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon8.png" alt="go to button">Preview</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Four -->
+        <div class="row justify-content-center align-items-center project-wrapper">
+            <div class="col-12 col-md-6 mb-3 order-md-last">
+                <div class="project-container">
+                    <a href="./projects/AcademyCinemas/academy_cinemas2.html" target="_blank" rel="noopener">
+                        <img class="project-image_container" src="./images/projects/project4.png" alt="movies with times">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mb-5 order-md-first">
+                <div class="project-container project-text_container">
+                    <h2 class="project-text_header">Cinema Website</h2>
+                    <p> This project was an introduction to Bootstrap 4. The design was based on a cinema website.</p>
+                    <a href="https://github.com/rhale1/The-Tech-Academy-HTML-CSS-Projects/tree/master/academy_cinemas2" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon7.png" alt="go to button">View Code</button></a>
+                    <a href="./projects/AcademyCinemas/academy_cinemas2.html" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon8.png" alt="go to button">Preview</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Five -->
+        <div class="row justify-content-center align-items-center project-wrapper">
+            <div class="col-12 col-md-6 mb-3">
+                <div class="project-container">
+                    <a href="./projects/PizzaMenu/pizza_menu.html" target="_blank" rel="noopener">
+                        <img class="project-image_container" src="./images/projects/project5.png" alt="pizza order screen">
+                    </a>
+                </div>
+            </div>
+            <div class="col-11 col-md-6 mb-5">
+                <div class="project-container project-text_container">
+                    <h2 class="project-text_header">Pizza Menu</h2>
+                    <p>A small application that generates an invioce receipt to the users screen based on their selection. The primary focus of this project was on menu functionality on UI. Technologies include: HTML, CSS and JavaScript</p>
+                    <a href="https://github.com/rhale1/The-Tech-Academy-JavaScript-Projects/tree/master/pizzaMenu" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon7.png" alt="go to button">View Code</button></a>
+                    <a href="./projects/PizzaMenu/pizza_menu.html" target="_blank" rel="noopener"><button class="project-btn"><img src="./images/thumb/icon8.png" alt="go to button">Preview</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------ CONTACT SECTION ------------------------------>
+<div class="container-fluid" id="contact">
+    <div class="row">
+        <div class="col">
+            <h1 class="header-text header-text_contact"  data-aos="fade-zoom-in" data-aos-once="true">Contact</h1>
+        </div>
+    </div>  
+    <div class="row mt-3 contact-icon_container"  data-aos="fade-zoom-in" data-aos-once="true">
+        <div class="col mb-4">
+            <a href="https://www.linkedin.com/in/rachel-hale-002785181" target="_blank" rel="noopener"><img src="./images/linkedin.png" alt="linkedin icon"></a>
+            <a href="https://github.com/rhale1" target="_blank" rel="noopener"><img src="./images/github.png" alt="github icon"></a>
+            <a href="mailto:rhale213@gmail.com" target="_blank" rel="noopener"><img src="./images/mail.png" alt="mail icon"></a>    
+        </div>
+    </div>
+    <div class="row footer-container">
+        <div class="col mt-3">
+            <p>Coded & Designed by Rachel Hale</p>
+        </div>
+    </div>
+</div>
+<!-- JS then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<!--Script tags-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>    
+
+<!--AOS script-->
+<script>   
+AOS.init();
+</script>
+</body>
+</html>

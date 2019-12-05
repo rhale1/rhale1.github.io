@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/pizzamenu.css"> 
+</head>
+<body>
+<h1>Build your Pizza!</h1>
+	<!--main-menu-->
+	<div class="container">
+		<h2>Size:</h2>
+		<input class="size" type="radio" name="Size" value="Personal Pizza" checked>Personal Pizza<br>
+		<input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
+		<input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza<br>
+		<input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+	</div>
+	<div class="container">
+		<h2>Meats:</h2>
+		<input class="meats" type="checkbox" name="Meat" value="Pepperoni">Pepperoni<br>
+		<input class="meats" type="checkbox" name="Meat" value="Sausage">Sausage <br>
+		<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon">Canadian Bacon<br> 
+		<input class="meats" type="checkbox" name="Meat" value="Ground Beef">Ground Beef<br>
+		<input class="meats" type="checkbox" name="Meat" value="Anchovy">Anchovy<br>
+		<input class="meats" type="checkbox" name="Meat" value="Chicken">Chicken<br>
+	</div>
+	<div class="container">
+		<h2>Cheese:</h2>
+		<input class="cheese" type="radio" name="Cheese" value="Regular Cheese">Regular Cheese<br>
+		<input class="cheese" type="radio" name="Cheese" value="No Cheese">No Cheese<br>
+		<input class="cheese" type="radio" name="Cheese" value="Extra Cheese">Extra Cheese<br>
+	</div>
+	<div class="container">
+		<h2>Crust:</h2>
+		<input class="crust" type="radio" name="Crust" value="Plain Crust">Plain Crust<br>
+		<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+		<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+		<input class="crust" type="radio" name="Crust" value="Spicy Crust">Spicy Crust<br>
+		<input class="crust" type="radio" name="Crust" value="House Special Crust">House Special Crust<br>
+	</div>
+	<div class="container">
+		<h2>Sauce:</h2>
+		<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce">Marinara Sauce<br>
+		<input class="sauce" type="radio" name="Sauce" value="White Sauce">White Sauce<br>
+		<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Barbeque Sauce<br>
+		<input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+	</div>
+	<div class="container">
+		<h2>Veggies:</h2>
+		<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes">Tomatoes<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Onions">Onions<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Olives">Olives<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers">Green Peppers<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Pineapple">Pineapple<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Spinach">Spinach<br>
+		<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno">Jalapeno<br>
+	</div>
+	<!--buttons-->
+	<div class="btn-container">
+		<button onclick="getOrder()">Order</button>
+		<button onclick="cancelOrder()">Cancel</button>
+	</div>
+	<div>
+	<!--Receipt-->
+		<div class="order_menu">
+			<p id="displayTxt"></p>
+			<p id="runningTotal2"></p>
+			<p id="totalPrice"></p>
+		</div>
+	</div>
+	<!--javascript-->
+	<script src="./js/pizzamenu.js"></script>	
+</body>
+</html>
+

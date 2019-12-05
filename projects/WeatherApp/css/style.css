@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-container {
+    background-image: url(".././img/clouds.jpg");
+    height: 100%; 
+    width: 100%;
+    /* Center and scale the image nicely */
+    filter: blur(1px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.btn {
+    background-color: rgb(47, 120, 148, .7);
+    color: rgb(255, 255, 255, 1);
+    letter-spacing: .5em;
+    border: 3px double #f1f1f1;
+    font-size: 1.6em;
+    padding: 1em;
+    cursor: pointer;
+} 
+
+.btn:hover {
+    background-color:rgb(47, 120, 148, .9);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.9); 
+}
+
+.btnHide {  
+    -moz-animation: fade forwards 1s; /* Firefox */
+    -webkit-animation: fade forwards 1s; /* Safari and Chrome */
+    -o-animation: fade forwards 1s; /* Opera */
+    animation: fade forwards 1s, spin 2s linear infinite;  
+} 
+
+.data-container {
+    display: grid;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background:  rgba(81, 134, 152, 0.73);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.9);  
+    letter-spacing: .2em;  
+    border-radius: .5em;
+    font-size: 1.3em;
+}
+
+.item {
+    padding: 0em 2em ;
+}
+
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.loader {
+    width:8em; 
+    height:8em;
+    -moz-animation: fade reverse 1s, spin 3s linear infinite; /* Firefox */
+    -webkit-animation: fade reverse 1s, spin 3s linear infinite; /* Safari and Chrome */
+    -o-animation: fade reverse 1s, spin 3s linear infinite; /* Opera */
+    animation: fade reverse 1s, spin 3s linear infinite;
+}
+
+.bounce {
+    -webkit-animation: fade reverse 1s, bounce 2s forwards; /* Safari and Chrome */   
+    -moz-animation:fade reverse 1s, bounce 2s forwards; /* Firefox */ 
+    -o-animation: bounce 2s forwards; /* Opera */
+    animation: fade reverse 1s, bounce 2s forwards;
+}
+
+/* ANIMATIONS */
+
+/* Bounce Animation */
+@-webkit-keyframes bounce  { /* Safari and Chrome */   
+0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%,-50%); } 
+    40% { transform: translate(-50%, -60%); } 
+    60% {transform: translate(-50%, -55%); }
+}
+@-moz-keyframes bounce  { /* Firefox */ 
+0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%,-50%); } 
+    40% { transform: translate(-50%, -60%); } 
+    60% {transform: translate(-50%, -55%); }
+}
+@-o-keyframes bounce { /* Opera */
+0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%,-50%); } 
+    40% { transform: translate(-50%, -60%); } 
+    60% {transform: translate(-50%, -55%); }
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%,-50%); } 
+    40% { transform: translate(-50%, -60%); } 
+    60% {transform: translate(-50%, -55%); }
+}
+ 
+/* Fade Animation */
+@-moz-keyframes fade { from { opacity:1; } to { opacity:0;}} /* Firefox */ 
+@-webkit-keyframes fade { from { opacity:1; } to { opacity:0;}} /* Safari and Chrome */    
+@keyframes fade { from { opacity:1; } to { opacity:0;}}
+
+/* Spin Animation */
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } } /* Firefox */ 
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } /* Safari and Chrome */ 
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -1,0 +1,78 @@
+body {
+    background-image:url("../img/pizzabg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4em;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background: #781212;
+    padding: 30px;
+    margin: 0px;
+    border: 2px solid #591C1C;
+}
+
+.container {
+    text-shadow: 0;
+    float: left;
+    width: 35%;
+    clear: right;
+}
+
+.btn-container {
+    padding-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+    background: #3F2020;
+    display: inline-block;
+}
+
+.order_menu {
+    border-radius: 10px;
+    display: inline-block;
+ 
+}
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px;
+    background: black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 13px;
+}
+  
+#displayTxt {
+    background: #6A1111;
+    border-radius: 12px;
+}
+ 
+#runningTotal2 {
+    background:#6B0F28;
+    border-radius: 12px;
+    margin-bottom: -80px;  
+}
+#totalPrice {
+    font-size: 20px;
+    background: black;
+    padding: 15px 0;
+    margin: 20px;
+    border-radius: 10px;
+}
+p {
+    text-align: center; 
+}
