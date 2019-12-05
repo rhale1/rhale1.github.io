@@ -18,7 +18,7 @@ body::after{
 	left:0;
 	right:0;
 	z-index:-1;
-	background: url(../images/main-bg.jpg) center center;
+	background: url(../images/test.jpg) center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -100,9 +100,9 @@ body::after{
 
 /******************************* ABOUT SECTION *******************************/
 #about {
-	background: url(../images/about-bg.jpg) no-repeat fixed;
-	overflow: hidden;
-	background-size: cover;	
+	background: url(../images/about-bg.jpg)  fixed;
+	z-index: 3;
+	height:auto;
 }
 
 .about-text {
@@ -154,7 +154,7 @@ body::after{
 
 .project-container {
 	background: rgb(144, 149, 156);
-	border: 3px solid #6c757d;
+	border: 3px solid #2C2F3E;
 	color: #1f232f;
 	font-size: 1.1em;
 }
