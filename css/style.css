@@ -138,14 +138,14 @@ body::after{
 }
 
 .header-text_portfolio {
-	color:#dcdcdc;
+	color:#adb5bd;
     text-shadow: 3px 5px 2px #0e1824;
 	letter-spacing: .15em; 
 	font-size: 3em;
 }
 
 .header-text_portfolio:before {
-	border-bottom: 2px solid #b3d7ff;
+	border-bottom: 2px solid #b3e2ff;
 }
 
 .project-wrapper {
@@ -155,7 +155,7 @@ body::after{
 .project-container {
 	background: rgb(144, 149, 156);
 	border: solid 3px #2C2F3E;
-	color: #2C2F3E;
+	color: #1f232f;
 	font-size: 1.1em;
 }
 
@@ -219,16 +219,11 @@ body::after{
 /******************************* CONTACT SECTION *******************************/
 #contact {
 	background: #1f232f;
-	overflow: hidden;
-	padding-top: 20px;
+	color: #afb6d8c4;	
 }
 
-.header-text_contact {
-	color:#dcdcdc;
-}
-
-.header-text_contact:before {
-	border-bottom: 2px solid #495057;
+#contact h1 {
+	text-shadow: 3px 5px 2px #0e1824;
 }
 
 .contact-icon_container img:hover {
