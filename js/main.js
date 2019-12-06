@@ -12,8 +12,8 @@ $(document).ready(function() {
  });
   var $root = $('html, body');
   $('a[href^="#"]').click(function (e) {
-    //Collapse nav bar on click
-    $('#navbarNav').collapse('hide');
+    // Collapse nav bar on click when toggler present
+    $('.navbar-collapse').collapse('hide');
     //smooth scroll on click
     e.preventDefault()
     $root.animate({
@@ -28,8 +28,8 @@ $(document).ready(function() {
   //Active class to nav links while scolling
     $('.container-fluid').each(function(i) {
         if ($(this).position().top <= scrollDistance) {
-          $('nav a.active').removeClass('active');
-          $('nav a').eq(i).addClass('active');
+          $('.navbar-nav a.nav-link.active').removeClass('active');
+          $('.navbar-nav a').eq(i).addClass('active');
         }
         // Active class to contact section once reached the bottom of page 
         if($(window).scrollTop() + $(window).height() > $(document).height() -200) {

@@ -22,10 +22,11 @@
 <body>
 <!------------------------------ NAV BAR  ---------------------------------->
  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">   
-    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="collapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <a href="#home"><span class="navbar-brand mb-0 h1">RH</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" aria-label="Go to home" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" aria-label="Go to about" href="#about">About</a></li>
@@ -33,14 +34,13 @@
             <li class="nav-item"><a class="nav-link" aria-label="Go to contact" href="#contact" id="nav-contact">Contact</a></li>
         </ul> 
     </div>
-</nav>  
+</nav>   
 <!------------------------------ HOME SECTION ---------------------------------->
 <div class="container-fluid h-100" id="home">
     <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
             <h1 class="home-text" data-aos="zoom-in-up" data-aos-duration="1000">Rachel Hale</h1>
             <h1 class="home-text_sub" data-aos="fade-up" data-aos-duration="1500">Web Developer</h1> 
-            <!-- <h5 class="home-text" data-aos="fade-up" data-aos-duration="1500">Come say hi</h5>  -->
             <a aria-label="arrow down" href="#about"><svg class="down-arrows">
                 <path class="arrowOne" d="M0 0 L30 32 L60 0"></path>
                 <path class="arrowTwo" d="M0 20 L30 52 L60 20"></path></svg> 
@@ -53,12 +53,12 @@
     <div class="container about-wrapper">
         <div class="row">
             <div class="col">
-                <h1 data-aos="fade-in">Hello!</h1>
+                <h1 data-aos="fade-in">Hello</h1>
             </div>
         </div>
         <div class="row" data-aos="fade-up">    
-            <p class="about-text">I'm <span style="font-weight: bold">Rachel,</span> I am based in Seattle WA and I am studying web development. 
-            I enjoy coffee, pizza and coding. I have a passion for UI and UX and aim to produce modern and efficient applications. Below are some languages I am familiar with and I am continuing to learn.</p> 
+            <p class="about-text">I'm <span style="font-weight: bold">Rachel,</span> I'm based in Seattle WA and I am studying web development. 
+            I enjoy coffee, pizza and coding. I have a passion for UI and UX and aim to produce modern and efficient applications. Below are some languages I'm familiar with and continue to learn.</p> 
         </div>  
     </div>  
 </div>
@@ -223,7 +223,7 @@
 <div class="container-fluid" id="contact">
     <div class="row pt-4" data-aos="fade-zoom-in">
         <div class="col">
-            <h1>Lets chat</h1>
+            <h1>Lets chat!</h1>
             <p>Interested in working together or want to learn more? Feel free to get in contact.</p>
         </div>
     </div>
@@ -242,15 +242,14 @@
 </div>
 
 <!-- JS then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"  defer></script>  -->
 <!--Script tags-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/main.js"></script>    
-
+<script src="js/main.js" defer></script>   
 <!--AOS script-->
 <script>   
-AOS.init({ once: true});
+AOS.init({once: true});
 </script>
 </body>
 </html>
