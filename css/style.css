@@ -214,6 +214,7 @@ body::after{
 #contact {
 	border-top: 3px solid #6c757d;
 	background: #1f232f;
+	overflow: hidden;
 	color: #afb6d8c4;	
 }
 
