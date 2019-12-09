@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(document).ready(function () {
   var $root = $('html, body');
   $('a[href^="#"]').click(function (e) {
     // Collapse nav bar on click when toggler present
@@ -10,7 +9,6 @@ $(document).ready(function() {
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 700);
   });
-});
 
   /* NAV BAR - Add active class on Scroll Event */
   $(window).scroll(function() { // window's scroll event
@@ -48,3 +46,4 @@ $(document).ready(function() {
     };
   //Fade in elements during scroll
   $(window).scroll(function() {fade();}); 
+});

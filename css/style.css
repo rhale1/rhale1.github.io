@@ -6,45 +6,48 @@
 /******************************* HOME SECTION *******************************/
 .home-text {
 	color: #dcdcdc;
+	font-size: 4em;
 	font-weight: 400;
 	letter-spacing: .2em;
-	font-size: 4em;
 	text-shadow: 3px 5px 2px #0a0219b3;
 }
+
 .home-text_sub {
 	color: #dcdcdc;
+	font-size: 3em;
 	font-weight: 400;
 	letter-spacing: .1em;
-	font-size: 3em;
 	text-shadow: 3px 5px 2px #0a0219b3;
 }
+
 .down-arrows {
-	width: 4em;
+	bottom: -10em;
 	height: 5em;
-	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: -10em;
+	position: absolute;
+	width: 4em;
 }
+
 .down-arrows path {
+	fill: none;
 	stroke:#b3d7ff;
-	fill: transparent;
 	stroke-width: 1.5px;
+	-moz-animation: arrow 2s infinite; /*Firefox*/
+	-webkit-animation: arrow 2s infinite;   /*Safari and Chrome*/
 	animation: arrow 2s infinite;
-	-moz-animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite;
 }
-.down-arrows path.arrowOne {
+
+.down-arrows .arrowOne {
+	-moz-animation-delay: -1s; /*Firefox*/
+	-webkit-animation-delay:-1s;  /* Safari and Chrome*/
 	animation-delay :-1s;
-	-moz-animation-delay: -1s;
-	-webkit-animation-delay:-1s;
-   /* Safari and Chrome */
 }
-.down-arrows path.arrowTwo {
-	animation-delay:-.5s;
-	-moz-animation-delay:-5s;
-	-webkit-animation-delay:-.5s;
-   /* Safari and Chrome */
+
+.down-arrows .arrowTwo {
+	-moz-animation-delay:-5s; /*Firefox*/
+	-webkit-animation-delay:-.5s; /* Safari and Chrome*/
+	animation-delay:-.5s; 
 }
 /******************************* ABOUT SECTION *******************************/
 #about {
@@ -53,9 +56,8 @@
 
 .about-wrapper {
 	background: #1f232f;
-	color: #afb6d8c4;	
 	border: 3px solid #6c757d;
-	
+	color: #afb6d8c4;		
 }
 
 #about h1 {
@@ -65,39 +67,43 @@
 }
 
 .about-text {
-	padding: 0 3% 3%;
-	letter-spacing: 2px;
 	font-size: 1.5em;
+	letter-spacing: 2px;
+	padding: 0 3% 3%;
 }  
 /******************************* SKILLS SECTION *******************************/
 .header-text_skills {
 	color:#adb5bd;
-	text-shadow: 3px 5px 2px #0e1824;
 	font-size: 2.5em;
 	letter-spacing: 4px;
 	padding-bottom: 2em;
+	text-shadow: 3px 5px 2px #0e1824;
 }
+
 .skills-icon_container {
 	background: linear-gradient(to bottom, rgba(68, 31, 54, 0.81), #576692cf);
 	border-radius: 50%;
-	-moz-box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #1f232f, 5px 5px 15px 5px #080c15;
-	-webkit-box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #1f232f, 5px 5px 15px 5px #080c15;
+	-moz-box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #1f232f, 5px 5px 15px 5px #080c15; /*Firefox*/
+	-webkit-box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #1f232f, 5px 5px 15px 5px #080c15; /* Safari and Chrome*/
 	box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #1f232f, 5px 5px 15px 5px #080c15;
 	padding: .8em;
 	width: 100%;
 }
+
 .skills-text h3 {
-	padding-top: 20px;
-	font-weight: 800;
-	font-size: 1.4em;
 	color:#adb5bd;
+	font-size: 1.4em;
+	font-weight: 800;
+	padding-top: 20px;
 	text-shadow: 3px 5px 2px #0e1824;
 }
+
 .skills-text h4 {
 	color:#adb5bd;
 	font-size: 1.2em;
 	padding-bottom: .05em;
 }
+
 @media screen and (max-width: 600px) {
 	.skills-text h4 {
 		font-size: 1em;
@@ -110,16 +116,18 @@
 }
 /******************************* PORTFOLIO SECTION *******************************/
 .project-image_container {
-	width: 100%;
 	height: auto;
+	width: 100%;
 }
+
 .header-text_portfolio {
 	color:#adb5bd;
-	text-shadow: 3px 5px 2px #0e1824;
-	letter-spacing: .15em;
-	font-size: 3em;
 	display: inline-block;
+	font-size: 3em;
+	letter-spacing: .15em;
+	text-shadow: 3px 5px 2px #0e1824;
 }
+
 /* Line under header text */
 .header-text_portfolio:before{
 	content: "";
@@ -130,48 +138,58 @@
 	left: 25%;
 	border-bottom: 2px solid #b3e2ff;
 }
+
 .project-wrapper {
 	padding: 3%;
 }
+
 .project-container {
 	background: rgb(144, 149, 156);
 	border: 3px solid #2C2F3E;
 	color: #1f232f;
 	font-size: 1.1em;
 }
+
 .project-container:hover {
 	transition: .3s;
-	-moz-box-shadow: 6px 8px 26px 2px rgba(7,32,46,0.89);
-	-webkit-box-shadow: 6px 8px 26px 2px rgba(7,32,46,0.89);
+	-moz-box-shadow: 6px 8px 26px 2px rgba(7,32,46,0.89); /*Firefox*/
+	-webkit-box-shadow: 6px 8px 26px 2px rgba(7,32,46,0.89); /* Safari and Chrome*/
 	box-shadow: 6px 8px 26px 2px rgba(7,32,46,0.89);
 }
+
 .project-text_container {
 	padding: 1.5%;
 }
+
 .project-btn {
 	background: transparent;
 	border: 1px solid #1f232f;
 	font-size: .8em;
 }
+
 .disabled {
 	background: transparent;
 	border: 1px solid #2C2F3E;
 	font-size: .8em;
 	opacity: .3;
 }
+
 .project-btn:hover {
 	background: linear-gradient(to bottom, #7F7B91, #8799b48c);
 	border: 1px solid rgb(35, 24, 80);
-	transform: translateY(-2px);
-	-moz-box-shadow: 0 10px 13px -7px #000000, 0 20px 15px -8px rgba(0,0,0,0);
-	-webkit-box-shadow: 0 10px 13px -7px #000000, 0 20px 15px -8px rgba(0,0,0,0);
+	-moz-box-shadow: 0 10px 13px -7px #000000, 0 20px 15px -8px rgba(0,0,0,0); /*Firefox*/
+	-webkit-box-shadow: 0 10px 13px -7px #000000, 0 20px 15px -8px rgba(0,0,0,0); /* Safari and Chrome*/
 	box-shadow: 0 10px 13px -7px #000000, 0 20px 15px -8px rgba(0,0,0,0);
+	transform: translateY(-2px);
 }
+
 /* Lines on the side of project titles */
 .project-text_header {
-	overflow: hidden;
 	font-size: 1.4em;
+	overflow: hidden;
+
 }
+
 .project-text_header:before, .project-text_header:after {
 	background-color:#2C2F3E;
 	content: "";
@@ -181,10 +199,12 @@
 	vertical-align: middle;
 	width: 50%;
 }
+
 .project-text_header:before {
-	right: 0.2em;
 	margin-left: -50%;
+	right: 0.2em;
 }
+
 .project-text_header:after {
 	left: 0.2em;
 	margin-right: -50%;
@@ -193,8 +213,8 @@
 #contact {
 	border-top: 3px solid #6c757d;
 	background: #1f232f;
-	overflow: hidden;
-	color: #afb6d8c4;	
+	color: #afb6d8c4;
+	overflow: hidden;	
 }
 
 #contact h1 {
@@ -202,18 +222,20 @@
 }
 
 .contact-icon_container img:hover {
-	transition: .5s;
-	transform: translateY(-5px);
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(158, 158, 158, 0.09) 65%);
+	transform: translateY(-5px);
+	transition: .5s;
 }
 
 .footer-container {
-	border-top: 1px solid #6c757d;
 	background: #000;
+	border-top: 1px solid #6c757d;
 	overflow: hidden;
 }
 /****************** ANIMATION **********************/
 /* Down arrow */
+@-moz-keyframes arrow /*Firefox*/
+{ 0%, 80%, 100% {opacity:0} 40% {opacity:1}}
 @-webkit-keyframes arrow /*Safari and Chrome*/
 { 0%, 80%, 100% {opacity:0} 40% {opacity:1}}
 @keyframes arrow
