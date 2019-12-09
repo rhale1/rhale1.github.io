@@ -1,27 +1,4 @@
-body, html {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100%;
-	font-family: Roboto, sans-serif;
-	color: #2C2F3E;
-	text-align: center;
-}
-body::after{
-	content:"";
-	position:fixed;
-	top:0;
-	height:100vh;
-	left:0;
-	right:0;
-	z-index:-1;
-	background: url(../images/main-bg.jpg) center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+
 /******************************* NAV BAR *******************************/
 .nav-link {
 	font-family: 'Roboto', sans-serif;
