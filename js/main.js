@@ -1,15 +1,5 @@
 $(document).ready(function() {
-  $('.navbar').hide();
-  /* Slide up and down nav bar based on location */
-    $(window).scroll(function() {
-    	if ($(this).scrollTop() > 550) {
-        $('.navbar').fadeIn();
-      }
-      else {
-        $('.navbar').fadeOut();
-      }
-   });
- });
+
   var $root = $('html, body');
   $('a[href^="#"]').click(function (e) {
     // Collapse nav bar on click when toggler present
@@ -20,6 +10,7 @@ $(document).ready(function() {
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 700);
   });
+});
 
   /* NAV BAR - Add active class on Scroll Event */
   $(window).scroll(function() { // window's scroll event
